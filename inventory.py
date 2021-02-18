@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb 18 17:24:51 2021
+
+@author: martsc1
+"""
+# inventory.py
+stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+
+def displayInventory(inventory):
+    print("Inventory:")
+    item_total = 0
+    for k, v in inventory.items():
+        print(str(v) + ' ' + k)
+        item_total = item_total + v
+    print("Total number of items: " + str(item_total))
+
+displayInventory(stuff)
